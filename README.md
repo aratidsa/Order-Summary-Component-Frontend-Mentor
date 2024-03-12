@@ -28,7 +28,7 @@ In this small project, build out this Order Summary Component and get it looking
 ### Links
 
 - Solution URL: https://github.com/aratidsa/Order-Summary-Component-Frontend-Mentor
-- Live Site URL: 
+- Live Site URL: https://design-order-summary-component.netlify.app/
 
 ## My process
 
