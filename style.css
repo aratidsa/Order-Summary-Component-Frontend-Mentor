@@ -1,0 +1,264 @@
+/* RESET */
+html,body
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img
+{
+    max-width: 100%;
+    display:block;
+}
+
+input,button
+{
+    font:inherit;
+}
+
+/* CUSTOM PROPERTIES */
+:root{
+    /* COLORS */
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    --clr-hover-bright-blue: hsl(245, 90%, 69%);
+
+    /* FONT SIZE */
+    --fs-16:1rem;
+
+    /* FONT FAMILY */
+    --ff-red-hat-display:"Red Hat Display", sans-serif;    
+
+    /* FONT WEIGHT */
+    --fw-500:500;
+    --fw-700:700;
+    --fw-900:900;
+}
+
+/* Body */
+body{
+    background:url(image/pattern-background-desktop.svg) ,var(--clr-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color:var(--clr-dark-blue);
+    font-size: var(--fs-16);
+    font-family: var(--ff-red-hat-display);
+    font-weight: var(--fw-500);
+    line-height: 1.6;
+   }
+
+/* COMPONENTS */   
+main{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container
+{
+    width:28.13rem;
+    border-radius:1.25rem;
+    background-color: white;
+}
+
+/* Top Illustration */
+.illustration-img
+{
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+/* Title */
+.title
+{
+    text-align: center;
+    font-size: 1.13rem;
+    margin-top:2.5rem;
+    letter-spacing: 0.06rem;
+    font-weight: var(--fw-900);
+    margin-bottom:-0.5rem;
+    color:var(--clr-dark-blue);
+}
+
+/* Description */
+.description
+{
+    text-align: center;
+    font-size:1rem;
+    padding-right:3.13rem;
+    padding-left:3.13rem;
+    color:var(--clr-desaturated-blue);
+}
+
+/* Plan */
+.display-grid
+{
+    margin-top:1.25rem;
+    display: grid;
+    grid-template-columns: auto 10rem 6.25rem;
+    grid-template-rows: auto;
+    width:20.63rem;
+    height:4.38rem;
+    margin-left:3.13rem;
+    padding-top:1.56rem;
+    padding-bottom:0.31rem;
+    padding-left:1.25rem;
+    border-radius: 0.63rem;
+    background-color: var(--clr-very-pale-blue);
+}
+
+.plan
+{
+    color:var(--clr-dark-blue);
+    font-weight: var(--fw-900);
+}
+
+.per-year
+{
+    color:var(--clr-desaturated-blue);
+}
+
+.change-txt
+{
+    font-size:0.88rem;
+    font-weight: var(--fw-900);
+    text-align: center;
+    margin-top:0.94rem;
+}
+
+.change-txt a
+{
+    color:var(--clr-bright-blue);
+}
+
+.change-txt a:hover
+{
+    text-decoration: none;
+    color:var(--clr-hover-bright-blue);
+}
+
+/* Payment Button */
+.btn
+{
+    width:20.94rem;
+    padding:0.63rem 0.63rem 0.81rem 0.63rem;
+    margin-top:2.19rem;
+    text-align: center;
+    margin-left:2.94rem;
+    border-radius: 0.63rem;
+    background-color: var(--clr-bright-blue);
+    color:var(--clr-very-pale-blue);
+    font-weight: var(--fw-900);
+    font-size: 0.94rem;
+    box-shadow: 0.63rem 1.25rem 1.5rem hsl(245, 80%, 88%);
+}
+.btn:hover{
+    background-color:var(--clr-hover-bright-blue);
+    cursor: pointer;
+}
+
+/* Cancel Order */
+.cancel-btn
+{
+    text-align: center;
+    margin-top:1.88rem;
+}
+
+.cancel-btn a
+{
+    text-decoration: none;
+    font-size:0.94rem;
+    color:var(--clr-desaturated-blue);
+    font-weight: var(--fw-900);
+}
+
+.cancel-btn a:hover
+{
+    color:var(--clr-dark-blue);
+}
+
+footer
+{
+    font-size:0.75rem;
+    text-align: center;
+    margin-top:-1.88rem;
+}
+
+footer a
+{
+    color:red;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+
+    body{
+        background:url(image/pattern-background-mobile.svg) ,var(--clr-pale-blue);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+  
+    /* Container */
+   .container
+  {
+    width:20.63rem;
+  }
+
+/* Title */
+   .title
+  {
+    font-size: 0.94rem;
+    margin-top:1.88rem;
+  }
+
+/* Description */
+   .description
+  {
+    font-size:0.88rem;
+  }
+
+/* Plan */
+   .display-grid
+  {
+    margin-top:1.25rem;
+    display: grid;
+    grid-template-columns: 4.06rem 8.13rem 0.63rem;
+    grid-template-rows: auto;
+    width:16.88rem;
+    height:4.38rem;
+    margin-left:1.25rem;
+  }
+
+   .plan
+ {
+    font-size:0.94rem;
+  }
+
+   .per-year
+  {
+    font-size:0.94rem;
+  }
+
+/* Payment Button */
+   .btn
+  {
+    width:17.19rem;
+    margin-top:1.56rem;
+    margin-left:1.06rem;
+  }
+
+/* Cancel Order */
+   .cancel-btn
+  {
+    margin-top:0.63rem;
+    margin-bottom: 1.88rem;
+  }
+
+}
